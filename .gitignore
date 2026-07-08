@@ -1,1 +1,28 @@
+# Dependencies (both frontend at root and backend in server/)
+node_modules/
+
+# Build output
+dist/
+server/dist/
+
+# Secrets & environment — NEVER commit these.
+# Our Neon database connection string lives in server/.env
+.env
+.env.*
+!.env.example
+
+# Personal learning notes — kept local, not shipped or committed
+learning/
+
+# Deploy / tooling
 .vercel
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS & editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
